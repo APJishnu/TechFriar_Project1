@@ -52,7 +52,9 @@
 
         /* About page specific styles */
         #about {
-            padding: 0px 0px;
+            width:auto;
+            height: auto;
+            padding: 20px 20px;
             text-align: center;
             
         }
@@ -107,6 +109,13 @@
             }
         }
         @media (max-width: 480px) {
+            #about {
+                width:auto;
+                height: auto;
+                padding: 20px 20px;
+                text-align: center;
+                
+            }
             .about-content {
                 flex-direction: column;
                 align-items: flex-start;

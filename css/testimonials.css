@@ -53,8 +53,12 @@
 
 
 #testimonials {
+    width:auto;
+    height: auto;
     text-align: center;
     padding: 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #testimonials h2{
     font-size: 2.5em;
@@ -150,5 +154,14 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+@media (max-width: 480px) {
+    #testimonials{
+       width:auto;
+       height: auto;
+       padding-left: 20px;
+       padding-right: 20px;
+        
+    }
 }
 
