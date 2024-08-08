@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'kanit';
+}
+
+@keyframes slideYright {
+    
+    from{
+        transform:translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+@keyframes slideXleft {
+    
+    from{
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideXright {
+    
+    from{
+        transform:translateX(150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideYleft {
+    
+    from{
+        transform:translateY(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+section{
+    padding: 0px 0px;
+}
+
+section h2 {
+   
+    margin-top: 30px;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideYright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+   
+
+}
+.firstP{
+
+    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+}
+section p {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    
+}
+
+.course-card {
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+}
+.course-card h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.course-card p {
+    color: #666;
+    text-align: center;
+}
+.course-card .price {
+    font-size: 1.2em;
+    color: #27ae60;
+}
+.course-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.course-card .btn:hover {
+    background-color: #2980b9;
+}
+.course-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

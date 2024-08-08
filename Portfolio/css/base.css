@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+/* Navbar Styles */
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 45px;
+    
+}
+.logo h1{
+    font-family: "Archivo black";
+    font-weight: 900;
+   
+}
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+.icon .toggle {
+    font-size: 24px;
+    color: #fff;
+}
+ul.list-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Change to row for horizontal layout */
+    background-color: #333; /* Same background color as header */
+}
+
+ul.list-item li {
+    margin-left: 20px;
+}
+
+ul.list-item li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+ul.list-item li a:hover {
+    background-color: #555;
+}
+
+
+
+
+/* Mobile Styles for Navbar */
+@media (max-width: 768px) {
+    .icon {
+        display: block;
+    }
+
+    ul.list-item {
+        list-style: none;
+        margin-top: 25px;
+        padding:0x;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Ensure items stack vertically */
+        position: absolute; /* Position absolute for smooth slide effect */
+        top: 60px; /* Adjust based on your header height */
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Same background color as header */
+        transform: translateY(-100%); /* Start hidden above the view */
+        opacity: 0; /* Start hidden */
+        transition: transform 0.8s ease, opacity 0.5s ease; /* Smooth transform and opacity transition */
+        animation: slidedown 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+        z-index: 1000; /* Ensure menu is above other content */
+    }
+    
+    ul.list-item.show {
+        transform: translateY(0px); /* Slide down to visible position */
+        opacity: 1; /* Fully visible */
+    }
+    
+    
+    ul.list-item li {
+        margin-left: 20px;
+        padding: 10px;
+        padding-bottom: 30px;
+        
+    }
+    
+    ul.list-item li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    ul.list-item li a:hover {
+        background-color: #555;
+    }
+
+    
+
+@keyframes slidedown {
+    
+    from{
+        transform:translateY(-350px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}
+
+    
+}
+
+/* Home Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+main {
+    padding: 0px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0px;
+    
+}
+
+footer .social-media {
+    margin-bottom: 10px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .contact-details p {
+    margin: 0;
+}

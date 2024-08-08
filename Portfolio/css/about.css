@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'kanit';
+}
+
+
+@keyframes slideYright {
+    
+    from{
+        transform:translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+@keyframes slideXleft {
+    
+    from{
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideXright {
+    
+    from{
+        transform:translateX(150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideYleft {
+    
+    from{
+        transform:translateY(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+
+
+        /* About page specific styles */
+        #about {
+            padding: 0px 0px;
+            text-align: center;
+            
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            animation: slideYright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+           
+        }
+
+        #about p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-content img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 10px;
+            animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+        }
+
+        .about-text {
+            max-width: 800px;
+            text-align: left;
+            animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+        }
+
+        @media (min-width: 768px) {
+            .about-content {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .about-text {
+                text-align: left;
+            }
+            .about-content img {
+                max-width: 60%;
+                height: auto;
+                border-radius: 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .about-content {
+                flex-direction: column;
+                align-items: flex-start;
+              
+            }
+            .about h2{
+                animation: slideYright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+            }
+
+            .about-text {
+                text-align: center;
+            }
+            .about-content img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 10px;
+                align-self: center;
+            }
+        }

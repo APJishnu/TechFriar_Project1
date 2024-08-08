@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'kanit';
+}
+
+@keyframes slideYright {
+    
+    from{
+        transform:translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+@keyframes slideXleft {
+    
+    from{
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideXright {
+    
+    from{
+        transform:translateX(150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideYleft {
+    
+    from{
+        transform:translateY(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+
+
+
+section{
+
+    padding: 0px 30px;
+    margin-bottom:70px ;
+   
+}
+
+section h2{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    animation: slideYright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+}
+/* General Styles */
+#signup {
+    padding: 10px 0px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7f9fc;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    animation: slideYleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+}
+
+#signup h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: medium;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+    padding-right: 40px;
+    padding-left:20px ;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.form-groupButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup .message {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.popup .close-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.popup .close-button:hover {
+    background-color: #555;
+}
+
+/* Blur Effect */
+.blurred #main-content {
+    filter: blur(5px);
+    pointer-events: none;
+}

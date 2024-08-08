@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'kanit';
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+  
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 50%;
+    padding-left: 280px;
+    
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-caption, .carousel-caption1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #000000;
+    z-index: 1;
+}
+
+.carousel-slide .carousel-routeImg {
+    width: 15%;
+    padding-left:100px;
+    position: relative;
+    margin-bottom: 200px;
+    left: 260px;
+    opacity: 0;
+
+}
+.carousel-slide .carousel-Img {
+   
+    width: 42%;
+    margin-left: 40px ;
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+}
+
+@keyframes slideXright {
+    
+    from{
+        transform:translateY(-300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+@keyframes slideY {
+    
+    from{
+        transform:translateX(-150px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+    }
+   
+}
+@keyframes slideXleft {
+    
+    from{
+        transform:translateY(300px);
+        opacity: 0;
+    }
+    to{
+        transform:translateY(0px);
+    }
+   
+}
+
+
+
+.carousel-caption div, .carousel-caption1 div {
+    max-width: 100%;
+    margin-left:-190px;
+    margin-top:20px;
+   
+    
+    
+  
+
+}
+
+.carousel-caption h1, .carousel-caption1 h1 {
+    font-size: 15px;
+    margin-top: -10px;
+    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+
+}
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 16px;
+}
+.carousel-caption .binaryTrading{
+    font-size: 50px;
+
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+    
+}
+
+.carousel-caption .withUs{
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -30px;
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+
+ 
+    
+}
+
+.carousel-caption h1, .carousel-caption1 h1 {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 16px;
+}
+
+.carousel-caption1 .key-point{
+    font-size: 50px;
+    
+    
+}
+
+.carousel-caption1 .sub-point{
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -30px;
+    
+}
+
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.carousel-nav span {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-slide .carousel-routeImg {
+    width: 10%;
+    padding-left:10px;
+    
+    top:130px;
+    margin-left: 200px;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-caption, .carousel-caption1 {
+        padding: 10px;
+    }
+
+    .carousel-caption div, .carousel-caption1 div {
+        max-width: 100%;
+    }
+
+    .carousel-caption h1, .carousel-caption1 h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption h5, .carousel-caption1 h5 {
+        font-size: 16px;
+    }
+
+    .carousel-nav span {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+   
+    .carousel-slide .carousel-routeImg {
+        width: 15%;
+        padding-left:10px;
+        position: absolute;
+        top:140px;
+        opacity: 100%;
+        left:-110px;
+        opacity: 0;
+        
+    
+    }
+    .carousel-slide .carousel-Img {
+        width: 60%;
+        padding-left:110px;
+        
+    }
+    .carousel-slide .carousel-Img2{
+        width: 65%;
+        padding-left:140px;
+    }
+
+    .carousel-caption, .carousel-caption1 {
+        padding: 0px;
+        
+    }
+
+    .carousel-caption div, .carousel-caption1 div {
+        max-width: 70%;
+        padding-left: 230px;
+        margin-top:170px;
+        
+        align-items:center;
+        justify-content: center;
+         
+        
+    }
+  
+    
+
+    .carousel-caption h1, .carousel-caption1 h1 {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        
+        
+    }
+   
+    .carousel-caption .binaryTrading{
+        font-size: 20px;
+        
+        
+    }
+   
+    .carousel-caption .withUs{
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        top:10px;
+        
+    }
+   
+   
+    .carousel-caption1 .key-point{
+        font-size: 20px;
+    }
+   
+    .carousel-caption1 .sub-point{
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        top:10px;
+        
+    }
+   
+
+    .carousel-caption h5, .carousel-caption1 h5 {
+        font-size: 12px;
+    }
+
+    .carousel-nav span {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+
+}
+
+
+
+/* section */
+
+.introductionClass{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #e3e9f18c;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+
+}
+section{
+
+    display:block;
+    padding: 10px;
+
+}
+
+section h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section p{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+}
+
+section .underlineDiv{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .underline{
+
+    width: 50px;
+    margin-top: -20px;
+   
+}
+@media (max-width: 480px) {
+    
+
+    
+section h1,section p {
+   text-align: center;
+}
+
+
+}
+
+
+
+section .highlights{
+
+    display:flex;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap:45px;
+ 
+   
+    
+}
+section .highlights .card{
+
+   width: 216px;
+   height: auto;
+   padding: 10px;
+   text-align: center;
+  
+  
+}
+section .highlights .card img{
+
+   width: 100px;
+   height: 100px;
+   
+   
+}
+
+
+@media (max-width: 480px) {
+    
+    .card {
+        flex: 1 1 100%; /* Full width cards on small screens */
+        margin: 10px 0;
+    }
+
+    .section-highlights {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center;
+    }
+
+    .card h3 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.8em;
+    }
+
+}
+
+
+
+#call-to-action {
+    background-color: #f7f9fc;
+    padding: 50px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+}
+
+#call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+#call-to-action p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+   
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    #call-to-action {
+        padding: 30px 15px;
+    }
+
+    #call-to-action h2 {
+        font-size: 1.5em;
+    }
+
+    #call-to-action p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+#testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    width: 250px;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    padding: 2px;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-container {
+        gap: 10px;
+    }
+
+    .testimonial {
+        width: 250px; /* Smaller width for smaller screens */
+    }
+
+    .testimonial p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        width: 200px; /* Even smaller width for very small screens */
+    }
+
+    .testimonial p {
+        font-size: 0.8em;
+    }
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
