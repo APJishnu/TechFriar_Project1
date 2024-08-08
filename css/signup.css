@@ -103,9 +103,9 @@ section h2{
 .password-toggle {
     position: absolute;
     right: 30px;
-    top: 30px;
+    top: 40px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 13px;
 }
 .form-groupButton{
     display: flex;

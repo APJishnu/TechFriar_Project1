@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const type = passwordInput.type === 'password' ? 'text' : 'password';
         passwordInput.type = type;
         confirmPasswordInput.type = type;
-        togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+        togglePassword.textContent = type === 'password' ? 'view' : 'hide';
     });
 
     // Form validation and popup
