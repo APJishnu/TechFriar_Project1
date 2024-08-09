@@ -195,30 +195,212 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .carousel-caption, .carousel-caption1 {
-        padding: 10px;
-    }
+@media(min-width:601px)and (max-width: 800px) {
+    
 
-    .carousel-caption div, .carousel-caption1 div {
-        max-width: 100%;
-    }
+.carousel-caption div, .carousel-caption1 div {
+    max-width: 100%;
+    margin-left:-220px;
+    margin-top:40px;
+  
 
-    .carousel-caption h1, .carousel-caption1 h1 {
-        font-size: 24px;
-    }
-
-    .carousel-caption h5, .carousel-caption1 h5 {
-        font-size: 16px;
-    }
-
-    .carousel-nav span {
-        font-size: 18px;
-        padding: 5px;
-    }
 }
 
-@media (max-width: 480px) {
+.carousel-slide .carousel-Img {
+    width: 40%;
+    padding-left:20px;
+    margin-top: 20px;
+    
+}
+.carousel-slide .carousel-Img2{
+    width: 45%;
+    padding-left:50px;
+    margin-top: 20px;
+}
+
+.carousel-caption h1, .carousel-caption1 h1 {
+    font-size: 10px;
+    margin-top: -10px;
+    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+
+}
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 10px;
+}
+.carousel-caption .binaryTrading{
+    font-size: 30px;
+
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+    
+}
+
+.carousel-caption .withUs{
+    font-size: 10px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -25px;
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+
+ 
+    
+}
+
+
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 15px;
+}
+
+.carousel-caption1 .key-point{
+    font-size: 30px;
+    
+    
+}
+
+.carousel-caption1 .sub-point{
+    font-size: 10px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -25px;
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    
+}
+
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.carousel-nav span {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+}
+
+/* Responsive Styles */
+@media(min-width:801px)and (max-width: 1024px) {
+    
+
+.carousel-caption div, .carousel-caption1 div {
+    max-width: 100%;
+    margin-left:-180px;
+    margin-top:40px;
+  
+
+}
+
+.carousel-slide .carousel-Img {
+    width: 40%;
+    padding-left:120px;
+    margin-top: 20px;
+    
+}
+.carousel-slide .carousel-Img2{
+    width: 45%;
+    padding-left:150px;
+    margin-top: 20px;
+}
+
+.carousel-caption h1, .carousel-caption1 h1 {
+    font-size: 10px;
+    margin-top: -10px;
+    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+
+}
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 10px;
+}
+.carousel-caption .binaryTrading{
+    font-size: 30px;
+
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+    
+}
+
+.carousel-caption .withUs{
+    font-size: 10px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -25px;
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+  
+
+ 
+    
+}
+
+
+
+.carousel-caption h5, .carousel-caption1 h5 {
+    font-size: 15px;
+}
+
+.carousel-caption1 .key-point{
+    font-size: 30px;
+    
+    
+}
+
+.carousel-caption1 .sub-point{
+    font-size: 10px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -25px;
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    
+}
+
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.carousel-nav span {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+}
+
+@media (max-width: 600px) {
+   
+    
 
 
     .carousel-slide {
@@ -238,13 +420,13 @@
     
     }
     .carousel-slide .carousel-Img {
-        width: 60%;
-        padding-left:110px;
+        width: 45%;
+        padding-left:190px;
         
     }
     .carousel-slide .carousel-Img2{
-        width: 65%;
-        padding-left:140px;
+        width: 50%;
+        padding-left:230px;
     }
 
     .carousel-caption, .carousel-caption1 {
@@ -254,8 +436,8 @@
 
     .carousel-caption div, .carousel-caption1 div {
         max-width: 70%;
-        padding-left: 230px;
-        margin-top:170px;
+        padding-left: 220px;
+        margin-top:110px;
         
         align-items:center;
         justify-content: center;
@@ -287,7 +469,7 @@
         align-items: center;
         display: flex;
         justify-content: right;
-        top:10px;
+        top:15px;
         
     }
    
@@ -302,7 +484,7 @@
         align-items: center;
         display: flex;
         justify-content: right;
-        top:10px;
+        top:15px;
         
     }
    
@@ -316,6 +498,37 @@
         padding: 5px;
     }
     
+
+}
+
+@media (max-width:480px){
+    
+    .carousel-slide .carousel-Img {
+        width: 45%;
+        padding-left:140px;
+        
+    }
+    .carousel-slide .carousel-Img2{
+        max-width: 50%;
+        padding-left:170px;
+    }
+
+    .carousel-caption, .carousel-caption1 {
+        padding: 0px;
+        
+    }
+
+    .carousel-caption div, .carousel-caption1 div {
+        max-width: 70%;
+        padding-left: 220px;
+        margin-top:110px;
+        
+        align-items:center;
+        justify-content: center;
+         
+        
+    }
+  
 
 }
 
@@ -366,17 +579,6 @@ section .underline{
     margin-top: -20px;
    
 }
-@media (max-width: 480px) {
-    
-
-    
-section h1,section p {
-   text-align: center;
-}
-
-
-}
-
 
 
 section .highlights{
@@ -410,16 +612,25 @@ section .highlights .card img{
 
 
 @media (max-width: 480px) {
-    
+main{
+    padding: 20px;
+}
+
     .card {
         flex: 1 1 100%; /* Full width cards on small screens */
-        margin: 10px 0;
+       
+        
     }
 
     .section-highlights {
         flex-direction: column; /* Stack cards vertically on small screens */
         align-items: center;
+        
     }
+    section h1,section p {
+        text-align: center;
+     }
+     
 
     .card h3 {
         font-size: 1.1em;
@@ -428,6 +639,98 @@ section .highlights .card img{
     .card p {
         font-size: 0.8em;
     }
+
+}
+
+@media (max-width: 768px) {
+    
+   main{
+    padding: 20px;
+   }
+.introductionClass{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #e3e9f18c;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+section{
+
+    display:block;
+    padding: 10px;
+
+
+}
+
+section .highlights{
+
+    display:flex;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap:45px;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .highlights .card{
+
+   width: 260px;
+   height: auto;
+   padding: 10px;
+   text-align: center;
+  
+}
+
+}
+
+@media(max-width: 1450px) {
+  main{
+    padding: 20px;
+  }
+
+.introductionClass{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #e3e9f18c;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+section{
+
+    display:block;
+    padding: 10px;
+
+
+}
+
+section .highlights{
+
+    display:flex;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap:45px;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .highlights .card{
+
+   width: 260px;
+   height: auto;
+   padding: 10px;
+   text-align: center;
+  
+}
 
 }
 
@@ -478,8 +781,12 @@ section .highlights .card img{
 }
 
 @media (max-width: 600px) {
+
+    
     #call-to-action {
-        padding: 30px 15px;
+        width: 100%;
+        margin-left: -10px;
+        padding: 20px 10px;
     }
 
     #call-to-action h2 {
