@@ -1,5 +1,5 @@
-  // Array of course details
-  const courses = [
+// Array of course details
+const courses = [
     {
         title: "Basic Trading Package",
         description: "Introduction to binary trading strategies and risk management.",
@@ -29,6 +29,9 @@
 // Reference to the container
 const container = document.querySelector('.course-cards-container');
 
+// Create a DocumentFragment to batch DOM updates
+const fragment = document.createDocumentFragment();
+
 // Loop through the courses and create the card HTML
 courses.forEach(course => {
     const card = document.createElement('div');
@@ -41,6 +44,9 @@ courses.forEach(course => {
         <a href="course-details.html?id=${course.id}" class="btn">Learn More</a>
     `;
     
-    // Append the card to the container
-    container.appendChild(card);
+    // Append the card to the fragment
+    fragment.appendChild(card);
 });
+
+// Append the fragment to the container in one operation
+container.appendChild(fragment);

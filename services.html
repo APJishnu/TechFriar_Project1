@@ -6,15 +6,25 @@
     <title>Our Services - Responsive Website</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    <style>
+        .logo{
+            display: flex;
+            gap: 1;
+        }
+        .logo img{
+            margin-top: 14px;
+        }
+    </style>
     
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" style="display:flex;gap:1px">
+            <div class="logo">
                 <h1>F</h1>
                 <h1>Y</h1>
-                <img src="img/currency-z.png" alt="Company Logo" style="margin-top:14px">
+                <img src="img/currency-z.webp" alt="Company Logo"  loading="lazy">
                 <h1>Z</h1>
             </div>
             <div class="icon">
