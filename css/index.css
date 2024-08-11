@@ -202,7 +202,7 @@
 
 .carousel-caption div, .carousel-caption1 div {
     max-width: 100%;
-    margin-left:-220px;
+    margin-left:-210px;
     margin-top:40px;
   
 
@@ -522,7 +522,7 @@
 
     .carousel-caption div, .carousel-caption1 div {
         max-width: 70%;
-        padding-left: 220px;
+        padding-left: 210px;
         margin-top:90px;
         
         align-items:center;
