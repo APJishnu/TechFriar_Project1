@@ -206,6 +206,10 @@ footer .contact-details p img {
 }
 
 @media (max-width: 600px) {
+    footer .social-media{
+        margin-left: -10px;
+        font-size: small;
+    }
     footer .contact-details {
         display: flex;
         flex-direction: column;
@@ -213,6 +217,7 @@ footer .contact-details p img {
         gap: 20px;
         padding-top:10px;
         padding-left: 3%;
+        font-size: small;
     }
    
 
