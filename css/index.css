@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    font-family: 'kanit';
-}
+
+
 
 /* Carousel Styles */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 100%;
+   
     overflow: hidden;
     margin-bottom: 50px;
-    
+
+    margin-top: 100px;
   
 }
 
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    
  
 }
 
@@ -455,8 +455,8 @@
         align-items: center;
         display: flex;
         justify-content: left;
-        
-        
+       
+    
     }
    
     .carousel-caption .binaryTrading{
@@ -541,6 +541,8 @@
 .introductionClass{
     margin-top: 20px;
     margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: #e3e9f18c;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -551,6 +553,7 @@ section{
 
     display:block;
     padding: 10px;
+    padding-bottom: 50px;
 
 }
 
@@ -562,9 +565,9 @@ section h1 {
 section p{
 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: justify;
     font-weight: 200;
+    padding: 0px 10px;
 }
 
 section .underlineDiv{
@@ -590,7 +593,9 @@ section .highlights{
     height: auto;
     padding: 10px;
     flex-wrap: wrap;
-    gap:45px;
+    gap:55px;
+    justify-content: center;
+    text-align: justify;
  
    
     
@@ -611,6 +616,11 @@ section .highlights .card img{
    
    
 }
+section .highlights .card p{
+
+    text-align: justify;
+   
+}
 
 
 @media (max-width: 480px) {
@@ -629,8 +639,11 @@ main{
         align-items: center;
         
     }
-    section h1,section p {
-        text-align: center;
+    section h1{
+        align-items: center;
+    }
+    .section p {
+        text-align: justify;
      }
      
 
@@ -648,6 +661,7 @@ main{
     
    main{
     padding: 20px;
+    
    }
 .introductionClass{
     margin-top: 20px;
@@ -739,10 +753,13 @@ section .highlights .card{
 
 
 #call-to-action {
+   
     background-color: #f7f9fc;
     padding: 50px 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    
+    
     
 }
 
@@ -757,6 +774,7 @@ section .highlights .card{
     font-size: 1.2em;
     color: #666;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .button{
@@ -767,28 +785,27 @@ section .highlights .card{
 }
 
 .cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    background-color: #235ba0;
     color: #fff;
-    background-color: #007bff;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-   
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #333;
 }
-
 @media (max-width: 600px) {
 
     
     #call-to-action {
         width: 100%;
-        margin-left: -10px;
-        padding: 20px 10px;
+        
+        padding: 20px 0px;
+      
     }
 
     #call-to-action h2 {
@@ -804,98 +821,6 @@ section .highlights .card{
         font-size: 1em;
     }
 }
-
-
-
-
-
-#testimonials h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.testimonial-container {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-}
-
-.testimonial {
-    flex: 0 0 auto;
-    width: 250px;
-    margin: 0 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.testimonial img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 2px solid #ddd;
-    padding: 2px;
-}
-
-.testimonial p {
-    font-size: 0.9em;
-    color: #666;
-}
-
-.testimonial cite {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #333;
-}
-
-@media (max-width: 600px) {
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .testimonial-container {
-        gap: 10px;
-    }
-
-    .testimonial {
-        width: 250px; /* Smaller width for smaller screens */
-    }
-
-    .testimonial p {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    .testimonial {
-        width: 200px; /* Even smaller width for very small screens */
-    }
-
-    .testimonial p {
-        font-size: 0.8em;
-    }
-
-    .testimonial img {
-        width: 60px;
-        height: 60px;
-    }
-}
-
-
 
 
 

@@ -36,25 +36,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-// testimonial
-
-document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.testimonial-container');
-    const testimonials = document.querySelectorAll('.testimonial');
-    let scrollAmount = 0;
-    const scrollStep = 1; // Adjust the scroll speed
-    const scrollInterval = 20; // Adjust the scroll interval
-    const testimonialWidth = testimonials[0].offsetWidth + 20; // Including margin
-
-    function autoScroll() {
-        scrollAmount += scrollStep;
-        if (scrollAmount >= container.scrollWidth - container.clientWidth) {
-            scrollAmount = 0; // Reset the scroll position
-        }
-        container.scrollLeft = scrollAmount;
-    }
-
-    setInterval(autoScroll, scrollInterval);
-});
-

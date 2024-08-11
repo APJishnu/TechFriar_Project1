@@ -6,14 +6,28 @@
     <title>Contact Us - Fyzz</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    <style>
+        .logo{
+            display: flex;
+         
+        }
+        
+        .logo img {
+            height: 45px;
+            padding-top: 25px;
+            
+        }
+    </style>
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" style="display: flex; gap: 1px;">
+            <div class="logo">
                 <h1>F</h1>
                 <h1>Y</h1>
-                <img src="img/currency-z.webp" alt="Company Logo" style="margin-top: 14px;">
+                <img src="img/currency-z.webp" alt="Company Logo"  loading="lazy">
                 <h1>Z</h1>
             </div>
             <div class="icon">
@@ -24,8 +38,8 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="enquiry.html">Join Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="signup.html">Join Us</a></li>
+                <li><a href="contact.html" class="glow-text">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +51,10 @@
                 <div class="contact-content">
                     <div class="contact-info">
                         <h5>Get In Touch</h5>
-                        <p class="description">If you have any questions or need further assistance regarding our binary trading training platform, feel free to reach out to us. We're here to help you with any queries you might have.</p>
+                        <p class="description">
+                            If you have any questions or need further assistance regarding our comprehensive binary trading training platform, don't hesitate to get in touch. Whether you're just getting started or looking to refine your trading strategies, our dedicated support team is here to guide you every step of the way. Reach out to us with any queries or concerns, and we'll be happy to help you on your journey toward successful trading.
+                        </p>
+                        
                         <div class="contact-item">
                             <img src="img/building.png" alt="">
                             <div class="details">
@@ -87,11 +104,9 @@
                             <textarea id="message" name="message" placeholder="Leave a message here" required></textarea>
                         </div>
                         <div class="submitButton">
-                           
-                                <button type="submit">Send Message</button>
-                           
+                            <button type="submit">Send Message</button>
                         </div>
-                       
+                        <div id="form-message" class="form-message"></div> <!-- Success message div -->
                     </form>
                 </div>
             </div>
@@ -102,14 +117,15 @@
         </section>
     </main>
 
+    
     <footer>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
+            <a href="#"><img src="img/logo-twitter.svg" alt="">Twitter</a>
+            <a href="#"><img src="img/logo-linkedin.svg" alt="">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>Email: info@binarytradingcourse.com | Phone: (123) 456-7890</p>
+            <p><img src="img/mail-sharp.svg" alt="">Email: info@binarytradingcourse.com  | </p><p><img src="img/call-sharp.svg" alt="">Phone: (123) 456-7890</p>
         </div>
     </footer>
 

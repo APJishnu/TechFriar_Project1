@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=*yes*">
     <title>Our Services - Responsive Website</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="preload" href="img/currency-z.webp" as="image">
+  
     <style>
         .logo{
             display: flex;
-            gap: 1;
+            
         }
-        .logo img{
-            margin-top: 14px;
+        
+        .logo img {
+            height: 45px;
+            padding-top: 25px;
+            
         }
     </style>
     
@@ -33,9 +37,9 @@
             <ul class="list-item">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="glow-text">Services</a></li>
                 <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="enquiry.html">Join Us</a></li>
+                <li><a href="signup.html">Join Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -44,7 +48,10 @@
     <main>
         <section id="services">
             <h2>OUR SERVICES</h2>
-            <p class="firstP">We offer a variety of services, including one-on-one coaching, online courses, and trading tools to help you succeed in the binary trading market.</p>
+            <p class="firstP">
+                We offer a diverse range of services designed to empower you in the binary trading market. From personalized one-on-one coaching sessions to comprehensive online courses, our expert-led training is tailored to meet your unique needs. In addition to educational resources, we provide cutting-edge trading tools and strategies that are essential for navigating the complexities of the market. Whether you're a beginner or an experienced trader, our goal is to equip you with the knowledge and confidence needed to achieve lasting success.
+            </p>
+            
             
             <div class="course-cards-container">
                 <!-- Cards will be dynamically inserted here -->
@@ -52,14 +59,15 @@
         </section>
     </main>
 
+    
     <footer>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
+            <a href="#"><img src="img/logo-twitter.svg" alt="">Twitter</a>
+            <a href="#"><img src="img/logo-linkedin.svg" alt="">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>Email: info@binarytradingcourse.com | Phone: (123) 456-7890</p>
+            <p><img src="img/mail-sharp.svg" alt="">Email: info@binarytradingcourse.com  | </p><p><img src="img/call-sharp.svg" alt="">Phone: (123) 456-7890</p>
         </div>
     </footer>
 

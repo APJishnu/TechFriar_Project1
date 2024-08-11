@@ -6,14 +6,30 @@
     <title>About Us - Fyzz</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    <style>
+    
+        
+        .logo{
+            display: flex;
+      
+        }
+        
+        .logo img {
+            height: 45px;
+            padding-top: 25px;
+            
+        }
+    </style>
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" style="display:flex;gap:1px">
+            <div class="logo">
                 <h1>F</h1>
                 <h1>Y</h1>
-                <img src="img/currency-z.webp" alt="Company Logo" style="margin-top:14px">
+                <img src="img/currency-z.webp" alt="Company Logo"  loading="lazy">
                 <h1>Z</h1>
             </div>
             <div class="icon">
@@ -21,10 +37,10 @@
             </div>
             <ul class="list-item">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html" class="glow-text">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="enquiry.html">Join Us</a></li>
+                <li><a href="signup.html">Join Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -37,7 +53,7 @@
                 <img src="img/aboutUs.webp" alt="About Us Image">
                 <div class="about-text">
                     <p class="firstP">Founded in 2020, Fyzz is quickly becoming a leading name in the binary trading industry. Our mission is to empower individuals from around the globe to capitalize on market opportunities with ease and confidence.</p>
-                    <p class="secondP"><strong>Four main commitments set us apart:</strong></p>
+                    <p class="secondP"><strong>FOUR MAIN COMMITMENTS SET US APART:</strong></p>
                     <ul>
                         <li>Educational and Training Resources: We provide comprehensive educational materials and training resources to help our clients enhance their trading knowledge and skills, ensuring they are well-prepared to make informed decisions.</li>
                         <li>Cybersecurity and Client Privacy: Our top-notch cybersecurity measures, stringent data safety protocols, and unwavering commitment to client privacy adhere to the highest industry standards and regulations. This ensures that our clients can trade with peace of mind, knowing their information is secure.</li>
@@ -50,14 +66,15 @@
         </section>
     </main>
 
+   
     <footer>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
+            <a href="#"><img src="img/logo-twitter.svg" alt="">Twitter</a>
+            <a href="#"><img src="img/logo-linkedin.svg" alt="">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>Email: info@fyzzbinarytrading.com | Phone: (123) 456-7890</p>
+            <p><img src="img/mail-sharp.svg" alt="">Email: info@binarytradingcourse.com  | </p><p><img src="img/call-sharp.svg" alt="">Phone: (123) 456-7890</p>
         </div>
     </footer>
 

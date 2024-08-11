@@ -1,78 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    font-family: 'kanit';
-}
+
 
 @keyframes slideYright {
-    
-    from{
-        transform:translateY(-300px);
+    from {
+        transform: translateY(-300px);
         opacity: 0;
     }
-    to{
-        transform:translateY(0px);
+    to {
+        transform: translateY(0);
     }
-   
 }
-@keyframes slideXleft {
-    
-    from{
-        transform:translateX(-150px);
-        opacity: 0;
-    }
-    to{
-        transform:translateX(0px);
-    }
-   
-}
-@keyframes slideXright {
-    
-    from{
-        transform:translateX(150px);
-        opacity: 0;
-    }
-    to{
-        transform:translateX(0px);
-    }
-   
-}
+
 @keyframes slideYleft {
-    
-    from{
-        transform:translateY(300px);
+    from {
+        transform: translateY(300px);
         opacity: 0;
     }
-    to{
-        transform:translateY(0px);
+    to {
+        transform: translateY(0);
     }
-   
 }
 
-
-
-section{
-
+section {
     padding: 0px 30px;
-    margin-bottom:70px ;
-   
+    margin-bottom: 10px;
+    padding-top: 100px;
 }
 
-section h2{
+section h2 {
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
-    animation: slideYright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    animation: slideYright 0.7s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
-/* General Styles */
+
 #signup {
-    padding: 10px 0px;
-    max-width: 600px;
+    padding: 20px;
+    max-width: 300px;
     margin: 0 auto;
     background-color: #f7f9fc;
     border: 1px solid #ddd;
     border-radius: 10px;
-    animation: slideYleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideYleft 0.7s cubic-bezier(0.65, 0, 0.35, 1) forwards;
 }
 
 #signup h1 {
@@ -84,37 +54,47 @@ section h2{
 .form-group {
     margin-bottom: 15px;
     position: relative;
-    padding-right: 40px;
-    padding-left:20px ;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
 }
 
 .form-group input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 10px 0; /* Padding adjusted to only affect top and bottom */
+    border: none;
+    border-bottom: 2px solid #ddd; /* Bottom border only */
+    border-radius: 0;
+    font-size: 16px;
+    background: transparent; /* Transparent background to avoid double borders */
+    transition: border-bottom-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom-color: #235ba0; /* Change bottom border color on focus */
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+    font-size: 16px;
 }
 
 .password-toggle {
     position: absolute;
-    right: 30px;
-    top: 40px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
     font-size: 13px;
+    margin-top: 20px;
 }
-.form-groupButton{
+
+.form-groupButton {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .cta-button {
-    background-color: #333;
+    background-color: #235ba0;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -124,46 +104,83 @@ section h2{
 }
 
 .cta-button:hover {
-    background-color: #555;
-}
-
-/* Popup Styles */
-.popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-}
-
-.popup .message {
-    margin-bottom: 15px;
-    font-size: 16px;
-    text-align: center;
-}
-
-.popup .close-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
     background-color: #333;
+}
+
+/* Message Styles */
+.form-message {
+    text-align: left;
+    margin-top: 5px;
+    font-size: 13px;
+    color: red;
+}
+
+/* Background blur effect when popup is active */
+.blur {
+    filter: blur(5px);
+}
+
+/* Popup Modal */
+.popup-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content .cta-button {
+    background-color: #235ba0;
     color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-.popup .close-button:hover {
-    background-color: #555;
+.popup-content .cta-button:hover {
+    background-color: #333;
 }
 
-/* Blur Effect */
-.blurred #main-content {
-    filter: blur(5px);
-    pointer-events: none;
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-150%); /* Adjust this to center it between both fields */
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 20px;
+    height: 20px;
+}
+
+@media(max-width:480px){
+    .popup-content{
+        width:300px;
+
+    }
 }

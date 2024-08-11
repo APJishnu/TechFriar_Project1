@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Binary Trading</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    <style>
+        .logo {
+            display: flex;
+     
+        }
+
+        .logo img {
+            height: 45px;
+            padding-top: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>F</h1>
+                <h1>Y</h1>
+                <img src="img/currency-z.webp" alt="Company Logo" loading="lazy">
+                <h1>Z</h1>
+            </div>
+            <div class="icon">
+                <span class="toggle">☰</span>
+            </div>
+            <ul class="list-item">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+                <li><a href="signup.html" class="glow-text">Join Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-content" style="margin-bottom: 120px;">
+        <main>
+            <section>
+                <h2>SIGN UP</h2>
+                <div id="signup">
+                    <h1>CREATE YOUR ACCOUNT</h1>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            <div id="nameError" class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <div id="emailError" class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+                            <div id="phoneError" class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" placeholder="Password" required>
+                            <span id="togglePassword" class="password-toggle"><img src="img/eye-outline.svg" alt="Toggle Password Visibility"></span>
+
+                            <div id="passwordError" class="form-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                            <div id="confirmPasswordError" class="form-message"></div>
+                        </div>
+                        <div class="form-groupButton">
+                            <button type="submit" class="cta-button">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <!-- Success Popup Modal -->
+    <div id="successPopup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Registration Successful!</h2>
+            <p>Welcome! Your account has been created successfully.</p>
+            <a id="closePopup" class="cta-button" href="index.html">OK</a>
+        </div>
+    </div>
+    
+        <footer id="signup-footer">
+            <div class="social-media">
+                <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
+                <a href="#"><img src="img/logo-twitter.svg" alt="">Twitter</a>
+                <a href="#"><img src="img/logo-linkedin.svg" alt="">LinkedIn</a>
+            </div>
+            <div class="contact-details">
+                <p><img src="img/mail-sharp.svg" alt="">Email: info@binarytradingcourse.com  | </p><p><img src="img/call-sharp.svg" alt="">Phone: (123) 456-7890</p>
+            </div>
+        </footer>
+    
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/signup.js" defer></script>
+</body>
+</html>

@@ -6,25 +6,41 @@
     <title>Home - Responsive Website</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    <style>
+
+        .logo{
+            display: flex;
+
+        }
+        
+        .logo img {
+            height: 45px;
+            padding-top: 25px;
+            
+        }
+
+    </style>
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo" style="display:flex;gap:1px">
+            <div class="logo">
                 <h1>F</h1>
                 <h1>Y</h1>
-                <img src="img/currency-z.webp" alt="Company Logo" style="margin-top:14px">
+                <img src="img/currency-z.webp" alt="Company Logo"  loading="lazy">
                 <h1>Z</h1>
             </div>
             <div class="icon">
                 <span class="toggle">☰</span>
             </div>
             <ul class="list-item">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="glow-text">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="testimonial.html">Testimonial</a></li>
-                <li><a href="enquiry.html">Join Us</a></li>
+                <li><a href="signup.html">Join Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -80,7 +96,10 @@
                         <img src="img/underline.png" class="underline" alt="underline Image 1">
                        </div>    
 
-            <p>We offer comprehensive training to help you become a successful binary trader. Our courses cover everything from basics to advanced strategies.</p>
+                       <p>"
+                        We offer comprehensive training programs designed to transform you into a successful binary trader. Our carefully structured courses cover every aspect of binary trading, starting with the foundational basics and progressing to advanced strategies used by seasoned professionals. Whether you're new to the world of trading or looking to refine your skills, our expert-led training ensures you gain the in-depth knowledge and practical experience needed to excel in the competitive trading environment.
+                    "</p>
+                    
         </section>
 
         <!-- Course Highlights Section -->
@@ -137,14 +156,15 @@
        
     </main>
 
+    
     <footer>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
+            <a href="#"><img src="img/logo-twitter.svg" alt="">Twitter</a>
+            <a href="#"><img src="img/logo-linkedin.svg" alt="">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p>Email: info@binarytradingcourse.com | Phone: (123) 456-7890</p>
+            <p><img src="img/mail-sharp.svg" alt="">Email: info@binarytradingcourse.com  | </p><p><img src="img/call-sharp.svg" alt="">Phone: (123) 456-7890</p>
         </div>
     </footer>
 
