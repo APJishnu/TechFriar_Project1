@@ -1,4 +1,4 @@
-document.getElementById('submit-form').addEventListener('submit', function(event) {
+document.getElementById('submit-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     let name = document.getElementById('name');
@@ -64,7 +64,7 @@ function showError(inputElement, errorMessage) {
 
 function clearErrorMessages() {
     const errorMessages = document.querySelectorAll('.error-message');
-    errorMessages.forEach(function(errorMessage) {
+    errorMessages.forEach(function (errorMessage) {
         errorMessage.remove();
     });
 }
@@ -75,7 +75,7 @@ function showSuccessMessage() {
     formMessage.style.display = 'block'; // Show the message
 
     // Remove the message after 5 seconds
-    setTimeout(function() {
+    setTimeout(function () {
         formMessage.style.display = 'none';
     }, 5000);
 }

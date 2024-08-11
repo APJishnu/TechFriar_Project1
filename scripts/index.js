@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentIndex = 0;
 
         function showSlide(index) {
-        
+
             carouselSlide.style.transform = `translateX(-${index * 100}%)`;
-            
+
         }
 
         function goToNextSlide() {

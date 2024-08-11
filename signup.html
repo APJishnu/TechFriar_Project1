@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Binary Trading</title>
-    
+
     <!-- Linking external CSS stylesheets -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/signup.css">
-    
+
     <!-- Preloading an image for better performance -->
     <link rel="preload" href="img/currency-z.webp" as="image">
-    
+
     <style>
         /* Inline CSS for specific styling */
         .logo {
@@ -25,6 +26,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header section with navigation -->
     <header>
@@ -39,7 +41,7 @@
             <div class="icon">
                 <span class="toggle">☰</span>
             </div>
-            
+
             <!-- Navigation links -->
             <ul class="list-item">
                 <li><a href="index.html">Home</a></li>
@@ -59,7 +61,7 @@
                 <h2>SIGN UP</h2>
                 <div id="signup">
                     <h1>CREATE YOUR ACCOUNT</h1>
-                    
+
                     <!-- Sign-up form -->
                     <form id="signupForm">
                         <!-- Full Name field -->
@@ -67,32 +69,34 @@
                             <input type="text" id="name" name="name" placeholder="Full Name" required>
                             <div id="nameError" class="form-message"></div>
                         </div>
-                        
+
                         <!-- Email field -->
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="Email" required>
                             <div id="emailError" class="form-message"></div>
                         </div>
-                        
+
                         <!-- Phone Number field -->
                         <div class="form-group">
                             <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
                             <div id="phoneError" class="form-message"></div>
                         </div>
-                        
+
                         <!-- Password field with toggle visibility -->
                         <div class="form-group">
                             <input type="password" id="password" name="password" placeholder="Password" required>
-                            <span id="togglePassword" class="password-toggle"><img src="img/eye-outline.svg" alt="Toggle Password Visibility"></span>
+                            <span id="togglePassword" class="password-toggle"><img src="img/eye-outline.svg"
+                                    alt="Toggle Password Visibility"></span>
                             <div id="passwordError" class="form-message"></div>
                         </div>
-                        
+
                         <!-- Confirm Password field -->
                         <div class="form-group">
-                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Confirm Password" required>
                             <div id="confirmPasswordError" class="form-message"></div>
                         </div>
-                        
+
                         <!-- Sign-up button -->
                         <div class="form-groupButton">
                             <button type="submit" class="cta-button">Sign Up</button>
@@ -102,7 +106,7 @@
             </section>
         </main>
     </div>
-    
+
     <!-- Success Popup Modal -->
     <div id="successPopup" class="popup-overlay">
         <div class="popup-content">
@@ -111,7 +115,7 @@
             <a id="closePopup" class="cta-button" href="index.html">OK</a>
         </div>
     </div>
-    
+
     <!-- Footer section with social media links and contact details -->
     <footer id="signup-footer">
         <div class="social-media">
@@ -120,7 +124,7 @@
             <a href="#"><img src="img/logo-linkedin.svg" alt="LinkedIn Icon">LinkedIn</a>
         </div>
         <div class="contact-details">
-            <p><img src="img/mail-sharp.svg" alt="Email Icon">Email: info@binarytradingcourse.com  | </p>
+            <p><img src="img/mail-sharp.svg" alt="Email Icon">Email: info@binarytradingcourse.com | </p>
             <p><img src="img/call-sharp.svg" alt="Phone Icon">Phone: (123) 456-7890</p>
         </div>
     </footer>
@@ -129,4 +133,5 @@
     <script src="scripts/common.js" defer></script>
     <script src="scripts/signup.js" defer></script>
 </body>
+
 </html>

@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (toggleButton && menu) {
         toggleButton.addEventListener('click', () => {
             menu.classList.toggle('show');
-            
-            
+
         });
     }
 });

@@ -36,14 +36,14 @@ const fragment = document.createDocumentFragment();
 courses.forEach(course => {
     const card = document.createElement('div');
     card.classList.add('course-card');
-    
+
     card.innerHTML = `
         <h3>${course.title}</h3>
         <p>${course.description}</p>
         <p class="price">${course.price}</p>
         <a href="course-details.html?id=${course.id}" class="btn">Learn More</a>
     `;
-    
+
     // Append the card to the fragment
     fragment.appendChild(card);
 });
