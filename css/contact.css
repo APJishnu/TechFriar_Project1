@@ -1,4 +1,4 @@
-
+/* Keyframes for slide animation */
 @keyframes slideYright {
     
     from{
@@ -261,4 +261,13 @@ body{
         border: 0;
         
     }
+    .submitButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin-left:50px;
+       
+    }
+    
 }

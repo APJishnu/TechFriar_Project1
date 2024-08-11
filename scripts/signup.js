@@ -1,3 +1,5 @@
+// signup-scripts
+
 document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signupForm');
     const nameError = document.getElementById('nameError');

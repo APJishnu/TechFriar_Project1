@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Fyzz</title>
+    
+    <!-- Linking external CSS stylesheets -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/about.css">
-    <link rel="preload" href="img/currency-z.webp" as="image">
-    <style>
     
-        
-        .logo{
+    <!-- Preloading an image for better performance -->
+    <link rel="preload" href="img/currency-z.webp" as="image">
+    
+    <style>
+        /* Inline CSS for specific styling */
+        .logo {
             display: flex;
-      
         }
         
         .logo img {
             height: 45px;
             padding-top: 25px;
-            
         }
     </style>
-    
 </head>
 <body>
+    <!-- Header section containing navigation -->
     <header>
         <nav>
+            <!-- Logo and navigation icon -->
             <div class="logo">
                 <h1>F</h1>
                 <h1>Y</h1>
-                <img src="img/currency-z.webp" alt="Company Logo"  loading="lazy">
+                <img src="img/currency-z.webp" alt="Company Logo" loading="lazy">
                 <h1>Z</h1>
             </div>
             <div class="icon">
                 <span class="toggle">☰</span>
             </div>
+            
+            <!-- Navigation links -->
             <ul class="list-item">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="glow-text">About Us</a></li>
@@ -46,10 +52,12 @@
         </nav>
     </header>
 
+    <!-- Main content area -->
     <main>
         <section id="about">
             <h2>ABOUT US</h2>
             <div class="about-content">
+                <!-- About Us image and text -->
                 <img src="img/aboutUs.webp" alt="About Us Image">
                 <div class="about-text">
                     <p class="firstP">Founded in 2020, Fyzz is quickly becoming a leading name in the binary trading industry. Our mission is to empower individuals from around the globe to capitalize on market opportunities with ease and confidence.</p>
@@ -66,7 +74,7 @@
         </section>
     </main>
 
-   
+    <!-- Footer section with social media links and contact details -->
     <footer>
         <div class="social-media">
             <a href="#"><img src="img/logo-facebook.svg" alt="">Facebook</a>
@@ -78,6 +86,7 @@
         </div>
     </footer>
 
+    <!-- Linking external JavaScript file -->
     <script src="scripts/common.js"></script>
 </body>
 </html>

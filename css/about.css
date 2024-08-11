@@ -1,4 +1,4 @@
-
+/* Keyframes for slide down animation */
 @keyframes slideYright {
     
     from{
@@ -119,36 +119,7 @@
                 border-radius: 10px;
             }
         }
-        /* @media (min-width:1001px){
-            .about-content {
-                flex-direction: column;
-                
-               
-            }
-
-            .about-text {
-                text-align: center;
-                align-items: center;
-            }
-            .about-text .firstP {
-                
-                flex-direction: row;
-                position:absolute;
-                margin-top: -280px;
-                width:500px;
-                margin-left:600px;
-            
-            }
-
-            
-            .about-content img {
-                max-width: 40%;
-                height: auto;
-                border-radius: 10px;
-                align-items: flex-start;
-                margin-left: 60px;
-            }
-        } */
+       
         @media (min-width:1200px){
             .about-content {
                 flex-direction: row;

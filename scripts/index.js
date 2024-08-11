@@ -1,3 +1,5 @@
+// carousel scripts
+
 document.addEventListener('DOMContentLoaded', () => {
     const carouselContainer = document.querySelector('.carousel-container');
 

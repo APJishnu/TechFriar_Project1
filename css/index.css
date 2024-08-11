@@ -1,4 +1,35 @@
 
+/* Keyframe animations for carousel effects */
+@keyframes slideXright {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideY {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideXleft {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
 
 
 
@@ -7,25 +38,19 @@
     position: relative;
     width: 100%;
     max-width: 100%;
-   
     overflow: hidden;
     margin-bottom: 50px;
-
     margin-top: 100px;
-  
 }
 
 .carousel-slide {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    
- 
 }
 
 .carousel-slide img {
     width: 50%;
     padding-left: 280px;
-    
 }
 
 .carousel-item {
@@ -50,124 +75,63 @@
 
 .carousel-slide .carousel-routeImg {
     width: 15%;
-    padding-left:100px;
+    padding-left: 100px;
     position: relative;
     margin-bottom: 200px;
     left: 260px;
     opacity: 0;
-
 }
+
 .carousel-slide .carousel-Img {
-   
     width: 42%;
-    margin-left: 40px ;
-    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    margin-left: 40px;
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
 }
-
-@keyframes slideXright {
-    
-    from{
-        transform:translateY(-300px);
-        opacity: 0;
-    }
-    to{
-        transform:translateY(0px);
-    }
-   
-}
-@keyframes slideY {
-    
-    from{
-        transform:translateX(-150px);
-        opacity: 0;
-    }
-    to{
-        transform:translateX(0px);
-    }
-   
-}
-@keyframes slideXleft {
-    
-    from{
-        transform:translateY(300px);
-        opacity: 0;
-    }
-    to{
-        transform:translateY(0px);
-    }
-   
-}
-
 
 
 .carousel-caption div, .carousel-caption1 div {
     max-width: 100%;
-    margin-left:-190px;
-    margin-top:20px;
-   
-    
-    
-  
-
+    margin-left: -190px;
+    margin-top: 20px;
 }
 
 .carousel-caption h1, .carousel-caption1 h1 {
     font-size: 15px;
     margin-top: -10px;
-    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-
-}
-
-.carousel-caption h5, .carousel-caption1 h5 {
-    font-size: 16px;
-}
-.carousel-caption .binaryTrading{
-    font-size: 50px;
-
-    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
-    
-}
-
-.carousel-caption .withUs{
-    font-size: 15px;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    margin-top: -30px;
-    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
-
- 
-    
-}
-
-.carousel-caption h1, .carousel-caption1 h1 {
-    font-size: 15px;
-    margin-top: -10px;
+    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
 }
 
 .carousel-caption h5, .carousel-caption1 h5 {
     font-size: 16px;
 }
 
-.carousel-caption1 .key-point{
+.carousel-caption .binaryTrading {
     font-size: 50px;
-    
-    
+    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
 }
 
-.carousel-caption1 .sub-point{
+.carousel-caption .withUs {
     font-size: 15px;
     position: relative;
     align-items: center;
     display: flex;
     justify-content: right;
     margin-top: -30px;
-    
+    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
 }
 
+.carousel-caption1 .key-point {
+    font-size: 50px;
+}
+
+.carousel-caption1 .sub-point {
+    font-size: 15px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: -30px;
+}
 
 .carousel-nav {
     position: absolute;
@@ -186,268 +150,173 @@
     font-size: 24px;
     padding: 10px;
     cursor: pointer;
-}
-.carousel-slide .carousel-routeImg {
-    width: 10%;
-    padding-left:10px;
-    
-    top:130px;
-    margin-left: 200px;
-
 }
 
 /* Responsive Styles */
-@media(min-width:601px)and (max-width: 800px) {
-    
+@media(min-width: 601px) and (max-width: 800px) {
+    .carousel-caption div, .carousel-caption1 div {
+        max-width: 100%;
+        margin-left: -210px;
+        margin-top: 40px;
+    }
 
-.carousel-caption div, .carousel-caption1 div {
-    max-width: 100%;
-    margin-left:-210px;
-    margin-top:40px;
-  
+    .carousel-slide .carousel-Img {
+        width: 40%;
+        padding-left: 20px;
+        margin-top: 20px;
+    }
 
+    .carousel-slide .carousel-Img2 {
+        width: 45%;
+        padding-left: 50px;
+        margin-top: 20px;
+    }
+
+    .carousel-caption h1, .carousel-caption1 h1 {
+        font-size: 10px;
+        margin-top: -10px;
+        animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
+
+    .carousel-caption h5, .carousel-caption1 h5 {
+        font-size: 10px;
+    }
+
+    .carousel-caption .binaryTrading {
+        font-size: 30px;
+        animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
+
+    .carousel-caption .withUs {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        margin-top: -25px;
+        animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
+
+    .carousel-caption1 .key-point {
+        font-size: 30px;
+    }
+
+    .carousel-caption1 .sub-point {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        margin-top: -25px;
+        animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
+
+    .carousel-nav span {
+        font-size: 24px;
+        padding: 10px;
+    }
 }
 
-.carousel-slide .carousel-Img {
-    width: 40%;
-    padding-left:20px;
-    margin-top: 20px;
-    
-}
-.carousel-slide .carousel-Img2{
-    width: 45%;
-    padding-left:50px;
-    margin-top: 20px;
-}
+@media(min-width: 801px) and (max-width: 1024px) {
+    .carousel-caption div, .carousel-caption1 div {
+        max-width: 100%;
+        margin-left: -180px;
+        margin-top: 40px;
+    }
 
-.carousel-caption h1, .carousel-caption1 h1 {
-    font-size: 10px;
-    margin-top: -10px;
-    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
+    .carousel-slide .carousel-Img {
+        width: 40%;
+        padding-left: 120px;
+        margin-top: 20px;
+    }
 
-}
+    .carousel-slide .carousel-Img2 {
+        width: 45%;
+        padding-left: 150px;
+        margin-top: 20px;
+    }
 
-.carousel-caption h5, .carousel-caption1 h5 {
-    font-size: 10px;
-}
-.carousel-caption .binaryTrading{
-    font-size: 30px;
+    .carousel-caption h1, .carousel-caption1 h1 {
+        font-size: 10px;
+        margin-top: -10px;
+        animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
 
-    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
-    
-}
+    .carousel-caption h5, .carousel-caption1 h5 {
+        font-size: 10px;
+    }
 
-.carousel-caption .withUs{
-    font-size: 10px;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    margin-top: -25px;
-    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
+    .carousel-caption .binaryTrading {
+        font-size: 30px;
+        animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
 
- 
-    
-}
+    .carousel-caption .withUs {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        margin-top: -25px;
+        animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
 
+    .carousel-caption1 .key-point {
+        font-size: 30px;
+    }
 
+    .carousel-caption1 .sub-point {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        margin-top: -25px;
+        animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1) forwards;
+    }
 
-.carousel-caption h5, .carousel-caption1 h5 {
-    font-size: 15px;
-}
-
-.carousel-caption1 .key-point{
-    font-size: 30px;
-    
-    
-}
-
-.carousel-caption1 .sub-point{
-    font-size: 10px;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    margin-top: -25px;
-    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-    
+    .carousel-nav span {
+        font-size: 24px;
+        padding: 10px;
+    }
 }
 
-
-.carousel-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-.carousel-nav span {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000000;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-
-}
-
-/* Responsive Styles */
-@media(min-width:801px)and (max-width: 1024px) {
-    
-
-.carousel-caption div, .carousel-caption1 div {
-    max-width: 100%;
-    margin-left:-180px;
-    margin-top:40px;
-  
-
-}
-
-.carousel-slide .carousel-Img {
-    width: 40%;
-    padding-left:120px;
-    margin-top: 20px;
-    
-}
-.carousel-slide .carousel-Img2{
-    width: 45%;
-    padding-left:150px;
-    margin-top: 20px;
-}
-
-.carousel-caption h1, .carousel-caption1 h1 {
-    font-size: 10px;
-    margin-top: -10px;
-    animation: slideXright 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-
-}
-
-.carousel-caption h5, .carousel-caption1 h5 {
-    font-size: 10px;
-}
-.carousel-caption .binaryTrading{
-    font-size: 30px;
-
-    animation: slideY 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
-    
-}
-
-.carousel-caption .withUs{
-    font-size: 10px;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    margin-top: -25px;
-    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-  
-
- 
-    
-}
-
-
-
-.carousel-caption h5, .carousel-caption1 h5 {
-    font-size: 15px;
-}
-
-.carousel-caption1 .key-point{
-    font-size: 30px;
-    
-    
-}
-
-.carousel-caption1 .sub-point{
-    font-size: 10px;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: right;
-    margin-top: -25px;
-    animation: slideXleft 0.7s cubic-bezier(0.65,0,0.35,1)forwards;
-    
-}
-
-
-.carousel-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    box-sizing: border-box;
-    z-index: 2;
-}
-
-.carousel-nav span {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000000;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-
-}
-
-@media (max-width: 600px) {
-   
-    
-
-
+@media(max-width: 600px) {
     .carousel-slide {
         display: flex;
         transition: transform 0.5s ease-in-out;
     }
-   
+
     .carousel-slide .carousel-routeImg {
         width: 15%;
-        padding-left:10px;
+        padding-left: 10px;
         position: absolute;
-        top:140px;
+        top: 140px;
         opacity: 100%;
-        left:-110px;
-        opacity: 0;
-        
-    
+        left: -110px;
     }
+
     .carousel-slide .carousel-Img {
         width: 45%;
-        padding-left:190px;
-        
+        padding-left: 190px;
     }
-    .carousel-slide .carousel-Img2{
+
+    .carousel-slide .carousel-Img2 {
         width: 50%;
-        padding-left:230px;
+        padding-left: 230px;
     }
 
     .carousel-caption, .carousel-caption1 {
         padding: 0px;
-        
     }
 
     .carousel-caption div, .carousel-caption1 div {
         max-width: 70%;
         padding-left: 220px;
-        margin-top:110px;
-        
-        align-items:center;
+        margin-top: 110px;
+        align-items: center;
         justify-content: center;
-         
-        
     }
-  
-    
 
     .carousel-caption h1, .carousel-caption1 h1 {
         font-size: 10px;
@@ -455,90 +324,44 @@
         align-items: center;
         display: flex;
         justify-content: left;
-       
-    
     }
-   
-    .carousel-caption .binaryTrading{
-        font-size: 20px;
-        
-        
-    }
-   
-    .carousel-caption .withUs{
-        font-size: 10px;
-        position: relative;
-        align-items: center;
-        display: flex;
-        justify-content: right;
-        top:15px;
-        
-    }
-   
-   
-    .carousel-caption1 .key-point{
-        font-size: 20px;
-    }
-   
-    .carousel-caption1 .sub-point{
-        font-size: 10px;
-        position: relative;
-        align-items: center;
-        display: flex;
-        justify-content: right;
-        top:15px;
-        
-    }
-   
 
-    .carousel-caption h5, .carousel-caption1 h5 {
-        font-size: 12px;
+    .carousel-caption .binaryTrading {
+        font-size: 20px;
+    }
+
+    .carousel-caption .withUs {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        margin-top: -30px;
+    }
+
+    .carousel-caption1 .key-point {
+        font-size: 20px;
+    }
+
+    .carousel-caption1 .sub-point {
+        font-size: 10px;
+        position: relative;
+        align-items: center;
+        display: flex;
+        justify-content: left;
+        margin-top: -30px;
     }
 
     .carousel-nav span {
-        font-size: 16px;
+        font-size: 20px;
         padding: 5px;
     }
-    
-
-}
-
-@media (max-width:480px){
-    
-    .carousel-slide .carousel-Img {
-        width: 45%;
-        padding-left:140px;
-        
-    }
-    .carousel-slide .carousel-Img2{
-        max-width: 50%;
-        padding-left:180px;
-    }
-
-    .carousel-caption, .carousel-caption1 {
-        padding: 15px;
-        
-    }
-
-    .carousel-caption div, .carousel-caption1 div {
-        max-width: 70%;
-        padding-left: 210px;
-        margin-top:90px;
-        
-        align-items:center;
-        justify-content: center;
-         
-        
-    }
-  
-
 }
 
 
 
-/* section */
-
-.introductionClass{
+/* Introduction Section Styling */
+.introductionClass {
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 10px;
@@ -546,106 +369,94 @@
     background-color: #e3e9f18c;
     border: 1px solid #ddd;
     border-radius: 10px;
-
-
 }
-section{
 
-    display:block;
+/* General Section Styling */
+section {
+    display: block;
     padding: 10px;
     padding-bottom: 50px;
-
 }
 
+/* Header Styling within Sections */
 section h1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section p{
 
+/* Paragraph Styling within Sections */
+section p {
     display: flex;
     text-align: justify;
     font-weight: 200;
     padding: 0px 10px;
 }
 
-section .underlineDiv{
-
+/* Underline Styling for Emphasis */
+section .underlineDiv {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section .underline{
 
+section .underline {
     width: 50px;
     margin-top: -20px;
-   
 }
 
-
-section .highlights{
-
-    display:flex;
+/* Highlights Section Styling */
+section .highlights {
+    display: flex;
     width: auto;
     height: auto;
     padding: 10px;
     flex-wrap: wrap;
-    gap:55px;
+    gap: 55px;
     justify-content: center;
     text-align: justify;
- 
-   
-    
 }
-section .highlights .card{
 
-   width: 216px;
-   height: auto;
-   padding: 10px;
-   text-align: center;
-  
-  
+section .highlights .card {
+    width: 216px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
 }
-section .highlights .card img{
 
-   width: 100px;
-   height: 100px;
-   
-   
+section .highlights .card img {
+    width: 100px;
+    height: 100px;
 }
-section .highlights .card p{
 
+section .highlights .card p {
     text-align: justify;
-   
 }
 
-
+/* Responsive Styles for Small Screens */
 @media (max-width: 480px) {
-main{
-    padding: 20px;
-}
+    main {
+        padding: 20px;
+    }
 
     .card {
         flex: 1 1 100%; /* Full width cards on small screens */
-       
-        
     }
 
     .section-highlights {
         flex-direction: column; /* Stack cards vertically on small screens */
         align-items: center;
-        
     }
-    section h1{
+
+    section h1 {
         align-items: center;
     }
+
     .section p {
         text-align: justify;
-     }
-     
+    }
 
     .card h3 {
         font-size: 1.1em;
@@ -654,113 +465,92 @@ main{
     .card p {
         font-size: 0.8em;
     }
-
 }
 
+/* Responsive Styles for Medium Screens */
 @media (max-width: 768px) {
-    
-   main{
-    padding: 20px;
-    
-   }
-.introductionClass{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    background-color: #e3e9f18c;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
+    main {
+        padding: 20px;
+    }
 
+    .introductionClass {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: #e3e9f18c;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+    }
 
-}
-section{
+    section {
+        display: block;
+        padding: 10px;
+    }
 
-    display:block;
-    padding: 10px;
+    section .highlights {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+        align-items: center;
+    }
 
-
-}
-
-section .highlights{
-
-    display:flex;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    flex-wrap: wrap;
-    gap:45px;
-    justify-content: center;
-    align-items: center;
-    
-}
-section .highlights .card{
-
-   width: 260px;
-   height: auto;
-   padding: 10px;
-   text-align: center;
-  
+    section .highlights .card {
+        width: 260px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
+/* Responsive Styles for Larger Screens */
+@media (max-width: 1450px) {
+    main {
+        padding: 20px;
+    }
+
+    .introductionClass {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        background-color: #e3e9f18c;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    section {
+        display: block;
+        padding: 10px;
+    }
+
+    section .highlights {
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 45px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .highlights .card {
+        width: 260px;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
 }
 
-@media(max-width: 1450px) {
-  main{
-    padding: 20px;
-  }
-
-.introductionClass{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    background-color: #e3e9f18c;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-
-
-}
-section{
-
-    display:block;
-    padding: 10px;
-
-
-}
-
-section .highlights{
-
-    display:flex;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    flex-wrap: wrap;
-    gap:45px;
-    justify-content: center;
-    align-items: center;
-    
-}
-section .highlights .card{
-
-   width: 260px;
-   height: auto;
-   padding: 10px;
-   text-align: center;
-  
-}
-
-}
-
-
-
+/* Call to Action Section Styling */
 #call-to-action {
-   
     background-color: #f7f9fc;
     padding: 50px 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    
-    
-    
 }
 
 #call-to-action h2 {
@@ -777,13 +567,14 @@ section .highlights .card{
     justify-content: center;
 }
 
-.button{
+/* Button Container Styling */
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
+/* Call to Action Button Styling */
 .cta-button {
     background-color: #235ba0;
     color: #fff;
@@ -798,14 +589,12 @@ section .highlights .card{
 .cta-button:hover {
     background-color: #333;
 }
-@media (max-width: 600px) {
 
-    
+/* Responsive Styles for Small Screens (Call to Action) */
+@media (max-width: 600px) {
     #call-to-action {
         width: 100%;
-        
         padding: 20px 0px;
-      
     }
 
     #call-to-action h2 {
@@ -822,9 +611,7 @@ section .highlights .card{
     }
 }
 
-
-
-
+/* Form Styling */
 form {
     max-width: 600px;
     margin: 0 auto;

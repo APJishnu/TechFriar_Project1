@@ -1,15 +1,26 @@
-
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    font-family: 'kanit';
+
+/* Applying font family to all elements */
+* {
+    font-family: 'Kanit', sans-serif;
+}
+/* Keyframes for slide down animation */
+@keyframes slidedown {
+    from {
+        transform: translateY(-350px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
+/* Glow effect for text */
 .glow-text {
     text-shadow: 0 0 5px #c0c9c0, 0 0 10px #576edd, 0 0 15px #90ccdb;
 }
 
-
-
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
@@ -20,6 +31,7 @@ header {
     padding: 0px;
 }
 
+/* Navbar styling */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -30,13 +42,13 @@ header nav {
     margin: 0 auto;
 }
 
-
-.logo h1{
+/* Logo styling */
+.logo h1 {
     font-size: 30px;
     font-weight: 900;
-   
 }
 
+/* Icon for mobile menu */
 .icon {
     display: none;
     cursor: pointer;
@@ -46,12 +58,14 @@ header nav {
     font-size: 24px;
     color: #fff;
 }
+
+/* Navbar list styling */
 ul.list-item {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row; /* Change to row for horizontal layout */
+    flex-direction: row; /* Horizontal layout for larger screens */
     background-color: #333; /* Same background color as header */
 }
 
@@ -71,9 +85,6 @@ ul.list-item li a:hover {
     background-color: #555;
 }
 
-
-
-
 /* Mobile Styles for Navbar */
 @media (max-width: 768px) {
     .icon {
@@ -83,34 +94,31 @@ ul.list-item li a:hover {
     ul.list-item {
         list-style: none;
         margin-top: 25px;
-        padding:0x;
+        padding: 0;
         display: none;
         align-items: center;
         justify-content: center;
-        flex-direction: column; /* Ensure items stack vertically */
-        position: absolute; /* Position absolute for smooth slide effect */
-        top: 60px; /* Adjust based on your header height */
+        flex-direction: column; /* Vertical stack on small screens */
+        position: absolute; /* Position for slide effect */
+        top: 60px; /* Adjust based on header height */
         left: 0;
         width: 100%;
         background-color: #333; /* Same background color as header */
         transform: translateY(-100%); /* Start hidden above the view */
-        /* Start hidden */
-        transition: transform 0.3s ease, opacity 0.5s ease; /* Smooth transform and opacity transition */
-        animation: slidedown 0.4s cubic-bezier(0.65,0,0.35,1)forwards;
+        transition: transform 0.3s ease, opacity 0.5s ease; /* Smooth transition */
+        animation: slidedown 0.4s cubic-bezier(0.65,0,0.35,1) forwards;
         z-index: 1000; /* Ensure menu is above other content */
     }
     
     ul.list-item.show {
         transform: translateY(0px); /* Slide down to visible position */
-        display:flex /* Fully visible */
+        display: flex; /* Fully visible */
     }
     
-    
     ul.list-item li {
-        margin-left: 0px;
+        margin-left: 0;
         padding: 10px;
         padding-bottom: 30px;
-        
     }
     
     ul.list-item li a {
@@ -124,18 +132,6 @@ ul.list-item li a:hover {
     ul.list-item li a:hover {
         background-color: #555;
     }
-
-    
-
-@keyframes slidedown {
-    
-    from{
-        transform:translateY(-350px);
-    }
-    to{
-        transform:translateY(0px);
-    }
-}
 
     
 }
@@ -157,8 +153,8 @@ main {
     margin: 0 auto;
 }
 
+/* Footer styling */
 footer {
-    
     background-color: #deeaff;
     color: #000000;
     text-align: center;
@@ -166,6 +162,7 @@ footer {
     bottom: 0;
 }
 
+/* Social media icons in footer */
 footer .social-media {
     margin-bottom: 10px;
 }
@@ -185,6 +182,7 @@ footer .social-media img {
     position: absolute;
 }
 
+/* Contact details in footer */
 footer .contact-details {
     display: flex;
     justify-content: center;
@@ -198,73 +196,68 @@ footer .contact-details p {
 footer .contact-details p img {
     width: 30px;
     height: 30px;
-    position:absolute;
+    position: absolute;
     margin-left: -33px;
     margin-top: -5px;
-   
-  
 }
 
+/* Responsive styles for footer */
 @media (max-width: 600px) {
-    footer .social-media{
+    footer .social-media {
         margin-left: -10px;
         font-size: small;
     }
+    
     footer .contact-details {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 20px;
-        padding-top:10px;
+        padding-top: 10px;
         padding-left: 3%;
         font-size: small;
     }
-   
-
-    footer .contact-details p img ,footer .social-media a img{
+    
+    footer .contact-details p img, 
+    footer .social-media a img {
         width: 25px;
         height: 30px;
-    
     }
 }
 
+/* Mobile Styles for Navbar (Additional styles for smaller screens) */
 @media (max-width: 480px) {
     ul.list-item {
         list-style: none;
         margin-top: 25px;
-        padding:0x;
+        padding: 0;
         display: none;
         align-items: center;
         justify-content: center;
-        flex-direction: column; /* Ensure items stack vertically */
-        position: absolute; /* Position absolute for smooth slide effect */
-        top: 60px; /* Adjust based on your header height */
+        flex-direction: column; /* Vertical stack on small screens */
+        position: absolute; /* Position for slide effect */
+        top: 60px; /* Adjust based on header height */
         left: 0;
         width: 100%;
         background-color: #333; /* Same background color as header */
         transform: translateY(-100%); /* Start hidden above the view */
-        /* Start hidden */
-        transition: transform 0.3s ease, opacity 0.5s ease; /* Smooth transform and opacity transition */
-        animation: slidedown 0.4s cubic-bezier(0.65,0,0.35,1)forwards;
+        transition: transform 0.3s ease, opacity 0.5s ease; /* Smooth transition */
+        animation: slidedown 0.4s cubic-bezier(0.65,0,0.35,1) forwards;
         z-index: 1000; /* Ensure menu is above other content */
     }
     
     ul.list-item.show {
         transform: translateY(0px); /* Slide down to visible position */
-        display:flex /* Fully visible */
+        display: flex; /* Fully visible */
     }
     
-    
     ul.list-item li {
-      
         padding-bottom: 30px;
-        
     }
     
     ul.list-item li a {
         text-decoration: none;
         color: #fff;
-        
         border-radius: 5px;
         transition: background-color 0.3s;
     }
@@ -272,6 +265,4 @@ footer .contact-details p img {
     ul.list-item li a:hover {
         background-color: #555;
     }
-
-    
 }

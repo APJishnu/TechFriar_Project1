@@ -1,4 +1,4 @@
-
+/* Keyframes for slide down animation */
 
 @keyframes slideYright {
     
@@ -45,11 +45,7 @@
    
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    
-}
+/* section */
 
 section{
     width: auto;
@@ -81,6 +77,8 @@ section p {
     padding: 0px  30px;
     
 }
+
+/* course-card sections */
 
 .course-card {
     width: 600px;
@@ -127,6 +125,9 @@ section p {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* mobile-display */
+
 @media (max-width: 480px) {
     section {
         width:auto;

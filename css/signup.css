@@ -1,5 +1,5 @@
 
-
+/* Keyframes for slide animation */
 @keyframes slideYright {
     from {
         transform: translateY(-300px);
@@ -19,6 +19,8 @@
         transform: translateY(0);
     }
 }
+
+/* section */
 
 section {
     padding: 0px 30px;
@@ -50,6 +52,8 @@ section h2 {
     margin-bottom: 20px;
     font-size: medium;
 }
+
+/* form-content */
 
 .form-group {
     margin-bottom: 15px;
@@ -177,6 +181,8 @@ section h2 {
     width: 20px;
     height: 20px;
 }
+
+/* mobile-display */
 
 @media(max-width:480px){
     .popup-content{
