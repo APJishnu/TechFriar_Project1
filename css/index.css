@@ -629,6 +629,9 @@ section .highlights .card p {
     padding: 50px 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #call-to-action h2 {
